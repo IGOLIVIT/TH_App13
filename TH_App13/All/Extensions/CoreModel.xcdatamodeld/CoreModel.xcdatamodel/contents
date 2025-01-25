@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23B74" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="PlantModel" representedClassName="PlantModel" syncable="YES" codeGenerationType="class">
+        <attribute name="plCat" optional="YES" attributeType="String"/>
+        <attribute name="plDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="plLL" optional="YES" attributeType="String"/>
+        <attribute name="plName" optional="YES" attributeType="String"/>
+        <attribute name="plNot" optional="YES" attributeType="String"/>
+        <attribute name="plRep" optional="YES" attributeType="String"/>
+        <attribute name="plTemp" optional="YES" attributeType="String"/>
+        <attribute name="plWF" optional="YES" attributeType="String"/>
+        <attribute name="plWI" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TaskModel" representedClassName="TaskModel" syncable="YES" codeGenerationType="class">
+        <attribute name="taPlant" optional="YES" attributeType="String"/>
+        <attribute name="taPlantPhoto" optional="YES" attributeType="String"/>
+        <attribute name="taTask1" optional="YES" attributeType="String"/>
+        <attribute name="taTask2" optional="YES" attributeType="String"/>
+        <attribute name="taTask3" optional="YES" attributeType="String"/>
+        <attribute name="taTask4" optional="YES" attributeType="String"/>
+        <attribute name="taTask5" optional="YES" attributeType="String"/>
+    </entity>
+</model>
