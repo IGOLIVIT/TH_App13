@@ -264,24 +264,53 @@ struct AddPlant: View {
 
                             VStack(alignment: .leading, spacing: 10) {
                                 
-                                Text("Temperature (℃)")
+                                Text("Temperature")
                                     .foregroundColor(.black)
                                     .font(.system(size: 13, weight: .regular))
                                 
-                                ZStack(content: {
+                                HStack {
                                     
-                                    Text("Enter")
-                                        .foregroundColor(.gray)
-                                        .font(.system(size: 15, weight: .regular))
-                                        .opacity(viewModel.plTemp.isEmpty ? 1 : 0)
-                                        .frame(maxWidth: .infinity, alignment: .leading)
-                                    
-                                    TextField("", text: $viewModel.plTemp)
-                                        .foregroundColor(Color.black)
-                                        .font(.system(size: 16, weight: .regular))
-                                    
-                                })
-                                .padding(7)
+                                    ZStack(content: {
+                                        
+                                        Text("Enter")
+                                            .foregroundColor(.gray)
+                                            .font(.system(size: 15, weight: .regular))
+                                            .opacity(viewModel.plTemp.isEmpty ? 1 : 0)
+                                            .frame(maxWidth: .infinity, alignment: .leading)
+                                        
+                                        TextField("", text: $viewModel.plTemp)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 16, weight: .regular))
+                                        
+                                    })
+                                    .padding(7)
+                                 
+                                    Menu(content: {
+                                        
+                                        ForEach(viewModel.tempTypes, id: \.self) { index in
+                                        
+                                            Button(action: {
+                                                
+                                                viewModel.curTType = index
+                                                
+                                            }, label: {
+                                                
+                                                Text(index)
+                                            })
+                                        }
+                                        
+                                    }, label: {
+                                        
+                                        Text(viewModel.curTType)
+                                            .foregroundColor(Color.black)
+                                            .font(.system(size: 16, weight: .regular))
+                                        
+                                        Image(systemName: "chevron.down")
+                                            .foregroundColor(.gray.opacity(0.5))
+                                            .font(.system(size: 17, weight: .regular))
+                                    })
+                                    .padding(.trailing, 40)
+                                }
                             }
                             .frame(maxWidth: .infinity, alignment: .leading)
                         }
@@ -321,6 +350,8 @@ struct AddPlant: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     
                     Button(action: {
+                        
+                        viewModel.plTType = viewModel.curTType
                         
                         viewModel.plCat = viewModel.curFamily
                         viewModel.plWI = String(viewModel.curIntens)

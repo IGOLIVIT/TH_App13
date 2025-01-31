@@ -8,6 +8,7 @@
         <attribute name="plNot" optional="YES" attributeType="String"/>
         <attribute name="plRep" optional="YES" attributeType="String"/>
         <attribute name="plTemp" optional="YES" attributeType="String"/>
+        <attribute name="plTType" optional="YES" attributeType="String"/>
         <attribute name="plWF" optional="YES" attributeType="String"/>
         <attribute name="plWI" optional="YES" attributeType="String"/>
     </entity>

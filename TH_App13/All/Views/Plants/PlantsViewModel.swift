@@ -17,6 +17,9 @@ final class PlantsViewModel: ObservableObject {
     @Published var addNW: String = ""
     @Published var addNS: String = ""
     
+    @Published var tempTypes: [String] = ["℃", "℉"]
+    @Published var curTType: String = "℃"
+    
     @Published var intensitives: [String] = ["1", "2", "3"]
     @Published var curIntens: Int = 1
 
@@ -32,6 +35,7 @@ final class PlantsViewModel: ObservableObject {
     @Published var isDelete: Bool = false
     @Published var isDeleteTask: Bool = false
     @Published var isSettings: Bool = false
+    @Published var isDetailVisible: Bool = false
 
     @Published var plCat: String = ""
     @Published var plName: String = ""
@@ -42,6 +46,7 @@ final class PlantsViewModel: ObservableObject {
     @Published var plRep: String = ""
     @Published var plTemp: String = ""
     @Published var plNot: String = ""
+    @Published var plTType: String = ""
 
     @Published var plants: [PlantModel] = []
     @Published var selectedPlant: PlantModel?
@@ -60,6 +65,7 @@ final class PlantsViewModel: ObservableObject {
         loan.plRep = plRep
         loan.plTemp = plTemp
         loan.plNot = plNot
+        loan.plTType = plTType
 
         CoreDataStack.shared.saveContext()
     }
