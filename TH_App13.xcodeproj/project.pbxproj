@@ -29,6 +29,11 @@
 		783F22052D43EC2B00FAF642 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F22042D43EC2B00FAF642 /* SettingsView.swift */; };
 		783F22082D44D6BD00FAF642 /* AddPlant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F22072D44D6BD00FAF642 /* AddPlant.swift */; };
 		783F220B2D44ECD200FAF642 /* AddTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783F220A2D44ECD200FAF642 /* AddTask.swift */; };
+		787762AE2D5624670086EC1F /* DuebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787762AD2D5624670086EC1F /* DuebView.swift */; };
+		787762B02D5624710086EC1F /* StamtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787762AF2D5624710086EC1F /* StamtView.swift */; };
+		787762B22D56247E0086EC1F /* WquiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787762B12D56247E0086EC1F /* WquiView.swift */; };
+		787762BB2D5625D20086EC1F /* OBU1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787762BA2D5625D20086EC1F /* OBU1.swift */; };
+		787762BD2D5625D90086EC1F /* OBUR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787762BC2D5625D90086EC1F /* OBUR.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +61,11 @@
 		783F22042D43EC2B00FAF642 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		783F22072D44D6BD00FAF642 /* AddPlant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPlant.swift; sourceTree = "<group>"; };
 		783F220A2D44ECD200FAF642 /* AddTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTask.swift; sourceTree = "<group>"; };
+		787762AD2D5624670086EC1F /* DuebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuebView.swift; sourceTree = "<group>"; };
+		787762AF2D5624710086EC1F /* StamtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StamtView.swift; sourceTree = "<group>"; };
+		787762B12D56247E0086EC1F /* WquiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WquiView.swift; sourceTree = "<group>"; };
+		787762BA2D5625D20086EC1F /* OBU1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBU1.swift; sourceTree = "<group>"; };
+		787762BC2D5625D90086EC1F /* OBUR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OBUR.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +130,7 @@
 		783F21D82D43E82D00FAF642 /* Start */ = {
 			isa = PBXGroup;
 			children = (
+				787762B92D5625C60086EC1F /* Unew */,
 				783F21DE2D43E84A00FAF642 /* StSc */,
 				783F21DD2D43E84600FAF642 /* Loading */,
 				783F21DC2D43E84000FAF642 /* Launch */,
@@ -142,6 +153,9 @@
 				783F21EF2D43E91C00FAF642 /* Array.swift */,
 				783F21F12D43E92300FAF642 /* CoreDataStack.swift */,
 				783F21F32D43E92A00FAF642 /* DateConvert.swift */,
+				787762AD2D5624670086EC1F /* DuebView.swift */,
+				787762AF2D5624710086EC1F /* StamtView.swift */,
+				787762B12D56247E0086EC1F /* WquiView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -235,6 +249,15 @@
 			path = AddTask;
 			sourceTree = "<group>";
 		};
+		787762B92D5625C60086EC1F /* Unew */ = {
+			isa = PBXGroup;
+			children = (
+				787762BA2D5625D20086EC1F /* OBU1.swift */,
+				787762BC2D5625D90086EC1F /* OBUR.swift */,
+			);
+			path = Unew;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,16 +329,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				787762AE2D5624670086EC1F /* DuebView.swift in Sources */,
 				783F21FE2D43E95000FAF642 /* TipsView.swift in Sources */,
 				783F21CB2D43E70B00FAF642 /* ContentView.swift in Sources */,
 				783F21FA2D43E94400FAF642 /* TasksView.swift in Sources */,
 				783F22052D43EC2B00FAF642 /* SettingsView.swift in Sources */,
+				787762BB2D5625D20086EC1F /* OBU1.swift in Sources */,
 				783F21E82D43E8A500FAF642 /* LoadingView.swift in Sources */,
 				783F21F82D43E93D00FAF642 /* PlantsViewModel.swift in Sources */,
 				783F21EE2D43E8BC00FAF642 /* OB3.swift in Sources */,
+				787762B02D5624710086EC1F /* StamtView.swift in Sources */,
 				783F21F22D43E92300FAF642 /* CoreDataStack.swift in Sources */,
 				783F22022D43E95C00FAF642 /* TabBar.swift in Sources */,
 				783F21E62D43E89D00FAF642 /* CoreModel.xcdatamodeld in Sources */,
+				787762B22D56247E0086EC1F /* WquiView.swift in Sources */,
 				783F21F42D43E92A00FAF642 /* DateConvert.swift in Sources */,
 				783F21EC2D43E8B700FAF642 /* OB2.swift in Sources */,
 				783F22002D43E95600FAF642 /* TipsViewModel.swift in Sources */,
@@ -323,6 +350,7 @@
 				783F21F62D43E93700FAF642 /* PlantsView.swift in Sources */,
 				783F220B2D44ECD200FAF642 /* AddTask.swift in Sources */,
 				783F21F02D43E91C00FAF642 /* Array.swift in Sources */,
+				787762BD2D5625D90086EC1F /* OBUR.swift in Sources */,
 				783F21C92D43E70B00FAF642 /* TH_App13App.swift in Sources */,
 				783F21EA2D43E8AF00FAF642 /* OB1.swift in Sources */,
 			);
@@ -472,7 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "IOI.TH-App13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
@@ -511,7 +539,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.1;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "IOI.TH-App13";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
